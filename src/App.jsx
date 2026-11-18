@@ -599,7 +599,7 @@ export default function App() {
                     </p>
 
                     <div style={{ marginTop: 12, padding: '10px 14px', borderRadius: 11, backgroundColor: 'rgba(229, 184, 92, 0.07)', border: '1px solid rgba(229, 184, 92, 0.25)', fontSize: 12.5, lineHeight: 1.6, color: '#e2e8f0' }}>
-                      📌 <strong>Önemli Bilgilendirme:</strong> Bu web sitesi yazar Deniz Karakurt'a ait resmi bir site değildir; yazarın izniyle site tasarımcısı tarafından geliştirilmiştir. Platformdaki bilgi yarışması ise tamamen Türk söylenceleri genel kültürünü pekiştirme amaçlı olup ödüllü değildir.
+                      📌 <strong>Önemli Bilgilendirme:</strong> Bu internet sitesi yazar Deniz Karakurt'a ait resmî bir site değildir; yazarın izniyle site tasarımcısı tarafından geliştirilmiştir. Platformdaki bilgi yarışması ise tamamen Türk söylenceleri genel kültürünü pekiştirme amaçlı olup ödüllü değildir.
                     </div>
                   </div>
                   <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: 10, borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: 12 }}>
@@ -713,10 +713,10 @@ export default function App() {
                 ℹ️ Önemli Bilgilendirme & Yasal Açıklama
               </div>
               <div style={{ color: 'rgba(243, 244, 246, 0.88)' }}>
-                Bu web sitesi, eserin yazarı <strong>Deniz Karakurt</strong>’a ait resmî bir platform değildir. Türk kültür ve mitoloji mirasını tanıtmak ve dijital çağa kazandırmak amacıyla, <strong>yazarın izniyle site tasarımcısı Sertan Çubukcu tarafından</strong> bağımsız olarak hazırlanmıştır.
+                Bu internet sitesi, eserin yazarı <strong>Deniz Karakurt</strong>’a ait resmî bir platform değildir. Türk kültür ve mitoloji mirasını tanıtmak ve dijital çağa kazandırmak amacıyla, <strong>yazarın izniyle site tasarımcısı Sertan Çubukcu tarafından</strong> bağımsız olarak hazırlanmıştır.
               </div>
               <div style={{ color: 'rgba(209, 213, 219, 0.78)', marginTop: 4 }}>
-                Platformda yer alan <em>Mitoloji Bilgi Yarışması</em> ise tamamen Türk söylencelerine dair <strong>genel kültür ve zihinsel pratik</strong> amaçlıdır. Herhangi bir maddi ödül, çekiliş ya da ticarî nitelik taşımamaktadır.
+                Platformda yer alan <em>Mitoloji Bilgi Yarışması</em>{' '}ise tamamen Türk söylencelerine dair <strong>genel kültür ve zihinsel pratik</strong> amaçlıdır. Herhangi bir maddi ödül, çekiliş ya da ticarî nitelik taşımamaktadır.
               </div>
             </div>
           </div>

@@ -256,7 +256,7 @@ export default function MythQuiz({ questions, onOpenInReader }) {
               >
                 <span>ℹ️</span>
                 <span>
-                  <strong>Genel Kültür Amaçlıdır:</strong> Bu bilgi yarışması Türk mitolojisini öğrenme ve zihinsel pratik amaçlıdır; ödüllü değildir ve herhangi bir ticarî nitelik taşımamaktadır.
+                  <strong>Genel Kültür Amaçlıdır:</strong>{' '}Bu bilgi yarışması Türk mitolojisini öğrenme ve zihinsel pratik amaçlıdır; ödüllü değildir ve herhangi bir ticarî nitelik taşımamaktadır.
                 </span>
               </div>
             </div>

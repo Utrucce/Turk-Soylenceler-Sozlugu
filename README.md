@@ -1,6 +1,6 @@
 # Türk Söylenceler Sözlüğü — Deniz Karakurt
 
-Deniz Karakurt'un **Türk Söylenceler Sözlüğü (Türk Mitoloji Ansiklopedisi)** eseri için hazırlanmış web portalı, **Kitabı Oku** (Orijinal PDF Belge & Metin Okuyucu) ve **3.868 Soruluk Bilgi Yarışması**.
+Deniz Karakurt'un **Türk Söylenceler Sözlüğü (Türk Mitoloji Ansiklopedisi)** eseri için hazırlanmış internet portalı, **Kitabı Oku** (Orijinal PDF Belge & Metin Okuyucu) ve **3.868 Soruluk Bilgi Yarışması**.
 
 - **Eser & Yazar:** Deniz Karakurt (*Türk Söylenceler Sözlüğü / Türk Söylence Sözlüğü*)
 - **Site Tasarımcısı:** Sertan Çubukcu
