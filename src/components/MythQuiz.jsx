@@ -237,6 +237,28 @@ export default function MythQuiz({ questions, onOpenInReader }) {
                 <strong style={{ color: 'var(--turquoise)' }}>{questions.length.toLocaleString('tr-TR')}</strong> adet
                 dört şıklı özgün soruyla Türk mitolojisi bilginizi sınayın.
               </p>
+
+              <div
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 8,
+                  marginTop: 12,
+                  padding: '8px 14px',
+                  borderRadius: 11,
+                  backgroundColor: 'rgba(45, 212, 191, 0.08)',
+                  border: '1px solid rgba(45, 212, 191, 0.28)',
+                  color: 'var(--turquoise)',
+                  fontSize: 12.5,
+                  fontWeight: 600,
+                  lineHeight: 1.5,
+                }}
+              >
+                <span>ℹ️</span>
+                <span>
+                  <strong>Genel Kültür Amaçlıdır:</strong> Bu bilgi yarışması Türk mitolojisini öğrenme ve zihinsel pratik amaçlıdır; ödüllü değildir ve herhangi bir ticarî nitelik taşımamaktadır.
+                </span>
+              </div>
             </div>
 
             {/* Personal Stats */}

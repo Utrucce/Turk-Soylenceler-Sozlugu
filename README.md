@@ -5,6 +5,8 @@ Deniz Karakurt'un **Türk Söylenceler Sözlüğü (Türk Mitoloji Ansiklopedisi
 - **Eser & Yazar:** Deniz Karakurt (*Türk Söylenceler Sözlüğü / Türk Söylence Sözlüğü*)
 - **Site Tasarımcısı:** Sertan Çubukcu
 
+> **Önemli Bilgilendirme:** Bu internet sitesi eserin yazarı Deniz Karakurt'a ait resmi bir mecra değildir; yazarın izniyle site tasarımcısı Sertan Çubukcu tarafından geliştirilmiştir. Platformda yer alan bilgi yarışması ise tamamen Türk mitolojisi genel kültürünü pekiştirme ve zihinsel pratik amaçlı olup, ödüllü bir yarışma değildir.
+
 ## Özellikler
 
 - **Kitabı Oku & Belgeyi İndir:** 907 sayfalık orijinal PDF belgeyi doğrudan sayfalar üzerinde **Üç Boyutlu Sayfa Kıvrılma** efektiyle okuyun veya tek tıkla PDF olarak indirin; ayrıca metin modunda 7 okuma teması, ipek sayfa ayracı, fosforlu kalem, sayfa notları, kitap içi arama, sesli okuma ve sayfa çevirme sesi kullanın.

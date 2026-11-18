@@ -502,9 +502,9 @@ export default function App() {
 
                 <PortalCard
                   icon={<Trophy size={26} />}
-                  badge="Binlerce Soru"
+                  badge="Genel Kültür • 3.868 Soru"
                   title="Mitoloji Bilgi Yarışması"
-                  desc="Kitabın sayfalarından ve etimolojilerinden üretilmiş 3.868 adet dört şıklı soru, %50 & Kitap İpucu jokerleri ve seri puanlama."
+                  desc="Kitabın sayfalarından ve etimolojilerinden üretilmiş 3.868 adet dört şıklı soru. Tamamen Türk mitolojisi genel kültürünü sınamak ve zihin pratiği yapmak içindir; ödüllü değildir."
                   cta="Yarışmaya Başla"
                   accent="#fdba74"
                   onClick={() => setView('quiz')}
@@ -583,20 +583,24 @@ export default function App() {
                   </div>
                 )}
 
-                {/* Künye & Tasarım Kartı */}
-                <div className="glass-panel" style={{ borderRadius: 20, padding: '24px 24px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', gap: 12 }}>
+                {/* Künye & Bilgilendirme Kartı */}
+                <div className="glass-panel" style={{ borderRadius: 20, padding: '24px 24px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', gap: 14 }}>
                   <div>
                     <div style={{ fontSize: 12, fontWeight: 700, color: 'var(--gold)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 8 }}>
-                      Eser & Künye Bilgisi
+                      Eser & Bilgilendirme
                     </div>
                     <h3 className="font-display" style={{ fontSize: 21, color: '#fff9ea', marginBottom: 10 }}>
                       Türk Mitoloji Ansiklopedisi
                     </h3>
                     <p style={{ fontSize: 13.5, lineHeight: 1.7, color: 'var(--text-muted)' }}>
-                      <strong style={{ color: 'var(--text-main)' }}>Yazar:</strong> Deniz Karakurt (2012, Elektronik dağıtımı serbest e-Kitap sürümü).
+                      <strong style={{ color: 'var(--text-main)' }}>Eserin Yazarı:</strong> Deniz Karakurt (2012, Elektronik dağıtımı serbest e-Kitap sürümü).
                       <br />
                       <strong style={{ color: 'var(--text-main)' }}>Site Tasarımcısı:</strong> Sertan Çubukcu
                     </p>
+
+                    <div style={{ marginTop: 12, padding: '10px 14px', borderRadius: 11, backgroundColor: 'rgba(229, 184, 92, 0.07)', border: '1px solid rgba(229, 184, 92, 0.25)', fontSize: 12.5, lineHeight: 1.6, color: '#e2e8f0' }}>
+                      📌 <strong>Önemli Bilgilendirme:</strong> Bu web sitesi yazar Deniz Karakurt'a ait resmi bir site değildir; yazarın izniyle site tasarımcısı tarafından geliştirilmiştir. Platformdaki bilgi yarışması ise tamamen Türk söylenceleri genel kültürünü pekiştirme amaçlı olup ödüllü değildir.
+                    </div>
                   </div>
                   <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: 10, borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: 12 }}>
                     <span style={{ fontSize: 12, color: 'rgba(229, 184, 92, 0.85)' }}>
@@ -648,44 +652,73 @@ export default function App() {
         <footer
           style={{
             borderTop: '1px solid rgba(255,255,255,0.09)',
-            backgroundColor: 'rgba(6, 10, 17, 0.86)',
-            padding: '18px 20px',
-            textAlign: 'center',
+            backgroundColor: 'rgba(6, 10, 17, 0.94)',
+            padding: '24px 20px 28px',
             fontSize: 12.5,
             color: 'var(--text-muted)',
           }}
         >
-          <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: 12 }}>
-            <span>
-              Eser & Yazar: <strong style={{ color: 'var(--gold-bright)' }}>Türk Söylenceler Sözlüğü — Deniz Karakurt</strong>
-            </span>
-            <span>•</span>
-            <span>
-              Site Tasarımcısı: <strong style={{ color: 'var(--turquoise)' }}>Sertan Çubukcu</strong>
-            </span>
-            {view === 'home' && (
-              <>
-                <span>•</span>
-                <button
-                  onClick={() => setLightningEnabled((v) => !v)}
-                  style={{
-                    background: 'rgba(255,255,255,0.06)',
-                    border: '1px solid rgba(255,255,255,0.14)',
-                    color: lightningEnabled ? 'var(--turquoise)' : 'var(--text-muted)',
-                    borderRadius: 99,
-                    padding: '3px 10px',
-                    fontSize: 11.5,
-                    fontWeight: 600,
-                    cursor: 'pointer',
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: 4,
-                  }}
-                >
-                  <Zap size={12} /> Şimşek Efekti: {lightningEnabled ? 'Açık' : 'Kapalı'}
-                </button>
-              </>
-            )}
+          <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 14, alignItems: 'center', textAlign: 'center' }}>
+            {/* Künye Satırı */}
+            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: 12 }}>
+              <span>
+                Eser: <strong style={{ color: 'var(--gold-bright)' }}>Türk Söylenceler Sözlüğü</strong>
+              </span>
+              <span>•</span>
+              <span>
+                Eserin Yazarı: <strong style={{ color: 'var(--gold-bright)' }}>Deniz Karakurt</strong>
+              </span>
+              <span>•</span>
+              <span>
+                Site Tasarımı & Dijitalleştirme: <strong style={{ color: 'var(--turquoise)' }}>Sertan Çubukcu</strong>
+              </span>
+              {view === 'home' && (
+                <>
+                  <span>•</span>
+                  <button
+                    onClick={() => setLightningEnabled((v) => !v)}
+                    style={{
+                      background: 'rgba(255,255,255,0.06)',
+                      border: '1px solid rgba(255,255,255,0.14)',
+                      color: lightningEnabled ? 'var(--turquoise)' : 'var(--text-muted)',
+                      borderRadius: 99,
+                      padding: '3px 10px',
+                      fontSize: 11.5,
+                      fontWeight: 600,
+                      cursor: 'pointer',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 4,
+                    }}
+                  >
+                    <Zap size={12} /> Şimşek Efekti: {lightningEnabled ? 'Açık' : 'Kapalı'}
+                  </button>
+                </>
+              )}
+            </div>
+
+            {/* Yasal Bilgilendirme ve Açıklama Kutusu */}
+            <div
+              style={{
+                maxWidth: 920,
+                padding: '12px 18px',
+                borderRadius: 12,
+                backgroundColor: 'rgba(255, 255, 255, 0.025)',
+                border: '1px solid rgba(229, 184, 92, 0.22)',
+                lineHeight: 1.65,
+                fontSize: 12,
+              }}
+            >
+              <div style={{ color: 'var(--gold-bright)', fontWeight: 700, marginBottom: 4 }}>
+                ℹ️ Önemli Bilgilendirme & Yasal Açıklama
+              </div>
+              <div style={{ color: 'rgba(243, 244, 246, 0.88)' }}>
+                Bu web sitesi, eserin yazarı <strong>Deniz Karakurt</strong>’a ait resmî bir platform değildir. Türk kültür ve mitoloji mirasını tanıtmak ve dijital çağa kazandırmak amacıyla, <strong>yazarın izniyle site tasarımcısı Sertan Çubukcu tarafından</strong> bağımsız olarak hazırlanmıştır.
+              </div>
+              <div style={{ color: 'rgba(209, 213, 219, 0.78)', marginTop: 4 }}>
+                Platformda yer alan <em>Mitoloji Bilgi Yarışması</em> ise tamamen Türk söylencelerine dair <strong>genel kültür ve zihinsel pratik</strong> amaçlıdır. Herhangi bir maddi ödül, çekiliş ya da ticarî nitelik taşımamaktadır.
+              </div>
+            </div>
           </div>
         </footer>
       </div>
