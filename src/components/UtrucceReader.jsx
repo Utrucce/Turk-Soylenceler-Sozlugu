@@ -60,7 +60,7 @@ function writeStorage(key, value) {
 }
 
 export default function UtrucceReader({ bookData, initialPage = null, onBack }) {
-  const totalPages = bookData?.totalPages || bookData?.pages?.length || 907;
+  const totalPages = bookData?.totalPages || bookData?.pages?.length || 392;
 
   const [settings, setSettings] = useState(() => ({
     ...DEFAULT_READER_SETTINGS,

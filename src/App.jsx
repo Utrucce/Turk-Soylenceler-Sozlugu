@@ -120,7 +120,7 @@ export default function App() {
                 Kitap Hazırlanıyor...
               </h2>
               <p style={{ fontSize: 13.5, color: 'var(--text-muted)', marginTop: 8 }}>
-                Türk Söylenceler Sözlüğü (907 sayfa) yükleniyor.
+                Türk Söylenceler Sözlüğü ({bookData?.totalPages || 392} sayfa) yükleniyor.
               </p>
             </div>
           </div>
@@ -201,7 +201,7 @@ export default function App() {
                 <div className="font-display" style={{ fontSize: 16.5, fontWeight: 700, color: 'var(--gold-bright)' }}>
                   Türk Söylenceler Sözlüğü
                 </div>
-                <div style={{ fontSize: 11, color: 'var(--text-muted)' }}>Deniz Karakurt • Türk Mitoloji Ansiklopedisi</div>
+                <div style={{ fontSize: 11, color: 'var(--text-muted)' }}>Deniz Karakurt • Türk Söylenceler Sözlüğü</div>
               </div>
             </button>
 
@@ -313,9 +313,9 @@ export default function App() {
                     marginBottom: 24,
                   }}
                 >
-                  Kadim Türk mitolojisinin 907 sayfalık dev ansiklopedisini doğrudan tarayıcınızdan okuyun veya
-                  indirin, yüzlerce mitolojik kavramı anında arayın ve{' '}
-                  <strong>{quizQuestions.length > 0 ? quizQuestions.length.toLocaleString('tr-TR') : '3.868'}</strong>{' '}
+                  Kadim Türk mitolojisinin {bookData?.totalPages || 392} sayfalık dev eserini doğrudan tarayıcınızdan okuyun veya
+                  indirin, {concepts.length ? concepts.length.toLocaleString('tr-TR') : '1.024'} mitolojik kavramı anında arayın ve{' '}
+                  <strong>{quizQuestions.length > 0 ? quizQuestions.length.toLocaleString('tr-TR') : '2.741'}</strong>{' '}
                   soruluk dört şıklı bilgi yarışmasıyla bilginizi sınayın.
                 </p>
 
@@ -463,11 +463,11 @@ export default function App() {
 
                 {/* Quick Hero Stats */}
                 <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 18, fontSize: 13, color: 'var(--text-muted)' }}>
-                  <span>📜 <strong style={{ color: 'var(--gold-bright)' }}>907</strong> Tam Kitap Sayfası</span>
+                  <span>📜 <strong style={{ color: 'var(--gold-bright)' }}>{bookData?.totalPages || 392}</strong> Tam Kitap Sayfası</span>
                   <span>•</span>
-                  <span>🧭 <strong style={{ color: 'var(--turquoise)' }}>{concepts.length || 874}</strong> Ansiklopedik Kavram</span>
+                  <span>🧭 <strong style={{ color: 'var(--turquoise)' }}>{concepts.length || 1024}</strong> Ansiklopedik Kavram</span>
                   <span>•</span>
-                  <span>🏆 <strong style={{ color: '#fdba74' }}>{quizQuestions.length ? quizQuestions.length.toLocaleString('tr-TR') : '3.868'}</strong> Dört Şıklı Soru</span>
+                  <span>🏆 <strong style={{ color: '#fdba74' }}>{quizQuestions.length ? quizQuestions.length.toLocaleString('tr-TR') : '2.741'}</strong> Dört Şıklı Soru</span>
                 </div>
               </div>
 
@@ -482,7 +482,7 @@ export default function App() {
               >
                 <PortalCard
                   icon={<BookOpen size={26} />}
-                  badge="Tam Eser • 907 Sayfa"
+                  badge={`Tam Eser • ${bookData?.totalPages || 392} Sayfa`}
                   title="Kitabı Oku"
                   desc="Deniz Karakurt'un orijinal Türk Söylenceler Sözlüğü belgesini sayfaları çevirerek okuyun; 7 tema, ipek ayraç, not alma, kitap içi arama ve tek tıkla PDF indirme."
                   cta="Kitabı Okumaya Başla"
@@ -590,10 +590,10 @@ export default function App() {
                       Eser & Bilgilendirme
                     </div>
                     <h3 className="font-display" style={{ fontSize: 21, color: '#fff9ea', marginBottom: 10 }}>
-                      Türk Mitoloji Ansiklopedisi
+                      Türk Söylenceler Sözlüğü
                     </h3>
                     <p style={{ fontSize: 13.5, lineHeight: 1.7, color: 'var(--text-muted)' }}>
-                      <strong style={{ color: 'var(--text-main)' }}>Eserin Yazarı:</strong> Deniz Karakurt (2012, Elektronik dağıtımı serbest e-Kitap sürümü).
+                      <strong style={{ color: 'var(--text-main)' }}>Eserin Yazarı:</strong> Deniz Karakurt (Elektronik dağıtımı serbest e-Kitap sürümü).
                       <br />
                       <strong style={{ color: 'var(--text-main)' }}>Site Tasarımcısı:</strong> Sertan Çubukcu
                     </p>
